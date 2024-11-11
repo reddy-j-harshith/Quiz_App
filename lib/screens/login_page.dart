@@ -12,7 +12,7 @@ class LoginPage extends StatelessWidget {
 
   Future<void> login(BuildContext context) async {
     final response = await http.post(
-      Uri.parse('http://192.168.0.4:8000/api/token/'),
+      Uri.parse('http://localhost:8000/api/token/'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },

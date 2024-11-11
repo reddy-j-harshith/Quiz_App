@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'token_service.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.0.4:8000/api';
+  static const String baseUrl = 'http://localhost:8000/api';
 
   static Future<http.Response> login(String username, String password) async {
     return await http.post(
